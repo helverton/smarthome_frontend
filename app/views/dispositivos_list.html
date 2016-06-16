@@ -1,0 +1,9 @@
+<div class="list-group">
+  <a href="#/dispositivos/{{dispositivo.id}}" class="list-group-item"  ng-repeat="dispositivo in dispositivos">
+  	Nome: {{dispositivo.nome}} <br/>
+	Tipo: {{dispositivo.tipo}} <br/>
+	Situação: {{ dispositivo.situacao === 1 ? 'Ligado':'Desligado' }}<br/>
+	<button ng-click="power(dispositivo)" class="btn btn-primary">Power</button>
+  </a>
+</div>
+<a href="#dispositivos/new" class="btn btn-default">Novo</a>
